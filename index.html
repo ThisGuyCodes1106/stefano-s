@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+  <title>Stefano's</title>
+</head>
+<body>
+  <div class="container">
+
+    <div class="banner">
+      <h1 class="title"><span class="logo">Stefano's</span> Pizza and Burger and Sushi Place</h1>
+      <h2 class="subheader">The best pizza and burger and sushi place in town</h2>
+    </div>
+
+    <div class="menu--container">
+
+      <div class="menu" id="menu">
+        <!-- Menu rendered here -->
+      </div>
+
+      <div class="placeholder" id="placeholderDiv"></div>
+
+      <div class="order" id="orderSection">
+        <h2 class="order-header">Your order</h2>
+        <div class="order--items" id="orderItems">
+          <!-- Items rendered here -->
+        </div>
+
+        <div class="order-total">
+          <p>Total price:</p>
+          <p id="totalPrice"></p>
+        </div>
+
+        <button class="order-btn" id="orderBtn">Complete order</button>
+      </div>
+
+      <div class="order-complete" id="thanksDiv">
+        <h2 class="thanks-msg">Thanks, James! Your order is on the way</h2>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-inner">
+          <h2 class="modal-header">Enter your card details</h2>
+          <form class="modal-form" action="#">
+            <input type="text" inputmode="numeric" placeholder="Enter your name">
+            <input type="number" inputmode="numeric" placeholder="Enter card number">
+            <input type="number" placeholder="Enter CVV" required>
+            <button class="buy-btn" id="payBtn">Pay</button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</body>
+
+<script src="index.js" type="module"></script>
+
+</html>

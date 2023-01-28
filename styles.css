@@ -1,0 +1,215 @@
+html, body {
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    background-color: lightgrey;
+}
+
+@font-face {
+    font-family: AmandaBlack;
+    src: url(/AnandaBlackFont.ttf);
+}
+
+.container {
+    max-width: 650px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Heaer Section */
+.banner {
+    height: 300px;
+    background-image: url("/images/banner-4.jpeg");
+    background-size: cover;
+    background-position-y: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo {
+    font-family: 'AmandaBlack';
+    font-size: 5rem;
+    display: block;
+    color: rgb(205, 17, 205);
+}
+
+.title {
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-shadow: 4px 4px 3px black;
+}
+
+.subheader {
+    font-weight: 300;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    text-shadow: 4px 4px 3px black;
+}
+
+/* Menu Section */
+.menu--container {
+    padding: 30px;
+}
+
+.menu--item {
+    display: flex;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid lightgrey;
+}
+
+.menu--item:last-child {
+    border: none;
+}
+
+.menu--item--img {
+    max-width: 20%;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.add-btn {
+    color: white;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgb(255, 107, 255);
+}
+.add-btn:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.placeholder {
+    height: 200px;
+}
+
+/* Order Section */
+.order {
+    margin: 50px 0;
+    display: none;
+}
+
+.order-header {
+    text-align: center;
+}
+
+.order--items {
+    padding-bottom: 15px;
+    border-bottom: 2px solid black;
+}
+
+.order--items--item {
+    display: flex;
+    align-items: center;
+}
+
+.order--items--item > * {
+    padding: 0;
+    margin: 0;
+}
+
+.remove-btn {
+    color: grey;
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.item-price {
+    margin-left: auto;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.order-btn {
+    width: 100%;
+    border: none;
+    background-color: #16DB99;
+    padding: 16px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(255, 107, 255);
+}
+
+.order-complete {
+    text-align: center;
+    background-color: rgb(253, 225, 253);
+    color: rgb(205, 17, 205);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 40px;
+    display: none;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 430px;
+    width: 400px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: white;
+    color: #212529;
+  }
+
+.modal-inner {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.modal-header {
+    margin-top: 40px;
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+input {
+    padding: 15px;
+    color: grey;
+    border-color: 1px solid lightgray;
+}
+
+.buy-btn {
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #16DB99;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: rgb(255, 107, 255);
+}
