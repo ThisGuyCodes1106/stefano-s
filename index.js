@@ -90,7 +90,6 @@ function completeOrder() {
 
 function completePayment() {
     order = []
-    location.reload()
     orderSectionDiv.style.display = 'none'
     modal.style.display = 'none'
     thanksDiv.style.display = 'block'
